@@ -9,7 +9,7 @@ Content for segment 1:
 -	Description of the Data source
 -	Questions that the group originally aimed to answer with the data
 
-Remember 
+*Remember that we also have to deliver for segment 1 a detailed readme file, the database with at least two tables and 4 commits per team member*
 
 ## Process
 
