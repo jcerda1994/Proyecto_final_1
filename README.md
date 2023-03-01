@@ -1,11 +1,15 @@
-# Final_Project
+# Alcohol and Life Expectancy
 
 ## Project overview
 
-*Purpose of our project*
+**Study on the alcohol consumption by country, its GDP and life expectancy**
 
-Content for segment 1:
--	Selected topic and reasoning for selection
+The purpose of this project is to analyze the impact of alcohol consumption in life expectancy by country and according to their gross domestic product (GDP) to see how different the impact can be, for example, if the higher the GDP, means less impact on life expectancy.
+
+We chose the topic of alcohol consumption and life expectancy because it is a relevant issue for public health, we know that excessive alcohol consumption can have negative consequences for our health such as cardiovascular diseases, cancer, liver diseases, among others; and in the same way it can negatively affect life expectancy.
+
+For this project we aim to analyze if the gdp of each country impact in the relation between their alcohol consumption and life expectancy. 
+
 -	Description of the Data source
 -	Questions that the group originally aimed to answer with the data
 
