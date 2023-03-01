@@ -14,9 +14,9 @@ Content for segment 1:
 ## Process
 
 Data
-ETL de la data 
-Machine Learning
-Visualization
+- ETL data 
+- Machine Learning
+- Visualization
 
 ## Tools
 
