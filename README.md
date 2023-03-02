@@ -18,6 +18,8 @@ Dataset description, what we used and format of the dataset
 
 ## Status of the project
 
+We have defined the topic of the project, the reasons why we chose it, what we intend to answer with our data and we are currently in the process of exploring the dataset in order to discover what other answers the data could provide us. The next step is to include a machine learning model, confusion matrix and accuracy score.
+
 ## Process
 
 - Data
