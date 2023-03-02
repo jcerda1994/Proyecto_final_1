@@ -9,7 +9,7 @@ This project intends to answers these questions through the analysis of historic
 Results are classified by country, region and income, due to the fact that these variables affect both life expectancy and alcohol consumption. For example, muslim countries are not supposed to permit alcohol consumption. On the other hand, countries with higher income could have higher rates of alcohol consumption, but have better access to health services, so it might be difficult to infer a relationship between life expectancy and alcohol consumption...
 
 
-## Data
+## DataBase
 
 ### Datasets
 
@@ -40,23 +40,30 @@ The variable in common is the country name, even though it is necessary to verif
 
 Year variable is not as clean as in the previous dataset and requires to clear rows with erroneous year data (such as year "-10000"). Furthermore, many values are missing, so it requires a full cleaning process, in order to keep homogeneous information.
 
+### ERD
+
+The Entity Relational Diagram
+
+## Tech
+
+
+## 
+
 
 ## Team & Roles
 
-### Laura Escamilla
+### Team
 
-Roles:
-1.
+Team is comprised by:
+1. Laura Escamilla
+2. Juan Cerda
+3. Michele Beltrán
 
-### José Cerda
+### Roles
 
-Roles:
-1. 
-
-### Michele Beltrán
-
-Roles:
-1.
+Roles to be assigned are:
+1. Project Manager
+2. Quality Assurance
 
 ## References
 
