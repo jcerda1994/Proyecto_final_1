@@ -76,5 +76,6 @@ Tools we used for visualization and show the results
 
 Team is comprised by:
 
-<img width="291" alt="roles3" src="https://user-images.githubusercontent.com/113747210/222622707-78dd5886-18d1-422f-8776-fbc415b13de8.png">
+<img width="309" alt="roles3" src="https://user-images.githubusercontent.com/113747210/222622965-8f39a91e-a48a-4fe7-b4e0-2ccfd3519b5f.png">
+
 
