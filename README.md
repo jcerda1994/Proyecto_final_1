@@ -2,9 +2,9 @@
 
 ## Project overview
 
-It is common belief that alcohol consumption has grown over the last years, even though its adverse consequences on human health. Is this true? Has alcohol consumption increased over time? If so, does it have impact on life expectancy?
+It is common belief that alcohol consumption has grown over the last years, even though its adverse consequences on human health. Is this true? Has alcohol consumption increased over time? If so, does it have impact on life expectancy? What about the type of alcohol consumed? Is there any difference between drinking beer, wine or spirits?
 
-This project intends to answers these questions through the analysis of historic databases of life expectancy and alcohol consumption.
+This project intends to answers these questions through the analysis of historic databases of life expectancy, alcohol consumption and type of alcohol consumed.
 
 Results are classified by country, region and income, due to the fact that these variables affect both life expectancy and alcohol consumption. For example, muslim countries are not supposed to permit alcohol consumption. On the other hand, countries with higher income could have higher rates of alcohol consumption, but have better access to health services, so it might be difficult to infer a relationship between life expectancy and alcohol consumption.
 
@@ -39,6 +39,18 @@ Alcohol Consumption dataset includes fewer variables than the Life Expectancy da
 The variable in common is the country name, even though it is necessary to verify that Country names match in both datasets.
 
 Year variable is not as clean as in the previous dataset and requires to clear rows with erroneous year data (such as year "-10000"). Furthermore, many values are missing, so it requires a full cleaning process, in order to keep homogeneous information.
+
+**Drinks**
+
+Drinks dataset has fewer variables and is set to one specific time period.
+
+Variables used in this dataset are measured in servings and are classified in beer servings, spirit servings and wine servings. Drinks dataset also includes a summary variable in which adds servings from all types and showing them in liters of alcohol consumed.
+
+This dataset doesn't include a country code, so it will be necessary to join the country variable with the other datasets.
+
+**ERD**
+
+![ERD Life_Expectancy_vs_Alcohol_Consumption](https://user-images.githubusercontent.com/113773420/222615004-c5ad6f57-6239-49c8-b998-4d3ac5fb2981.png)
 
 
 ## Status of the project
