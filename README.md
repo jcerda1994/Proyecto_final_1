@@ -76,6 +76,5 @@ Tools we used for visualization and show the results
 
 Team is comprised by:
 
-1. Laura Escamilla
-2. Juan Cerda
-3. Michele Beltrán
+<img width="291" alt="roles3" src="https://user-images.githubusercontent.com/113747210/222622707-78dd5886-18d1-422f-8776-fbc415b13de8.png">
+
