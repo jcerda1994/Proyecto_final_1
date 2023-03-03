@@ -88,5 +88,6 @@ Tools we used for visualization and show the results
 
 Team is comprised by:
 
-![Roles](https://user-images.githubusercontent.com/113747210/222620214-eede0ba9-9460-4d22-9019-b0ee217fa1ec.png)
+![roles2](https://user-images.githubusercontent.com/113747210/222620967-9cb77cf9-67cc-44eb-8a40-ade68eb17e4c.png)
+
 
