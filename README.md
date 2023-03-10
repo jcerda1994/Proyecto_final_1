@@ -55,7 +55,7 @@ This dataset doesn't include a country code, so it will be necessary to join the
 
 ## Status of the project
 
-We have defined the topic of the project, why we chose it, what we intend to answer with our data and we are currently in the process of exploring the dataset in order to discover what other answers the data could provide us. The next step is to include a machine learning model, confusion matrix and accuracy score.
+We are exploring the datsets and trying to answer our questions, we also have a machine learning model. Our next step is to get ready oyr dashboard with the results of the analysis and prepare our presentation.
 
 ## Process
 
