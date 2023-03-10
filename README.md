@@ -49,7 +49,7 @@ We are exploring the datsets and trying to answer out questions, now we have a m
 
 **Data**: We used the datasets of alcohol consumption and life expectancy to see the impact and to observe the alcohol consumption over time
 
-**ETL**: We processed the data using Pandas, drop null values, duplicates and merged the life expectancy data with the alcohol consumption by country to see if the alcohol consumption have increased over time.
+**ETL**: We processed the data using Pandas, drop null values, duplicates and merged the life expectancy data with the alcohol consumption by country to see if the alcohol consumption have increased over time, and finally get. the data ready for the machine learning model.
 
 **Analysis**: 
 
@@ -57,8 +57,9 @@ Based on the data of developed countries, we can see that alcohol consumption di
 
 We also found that there seems to be a negative correlation between alcohol consumption and life expectancy by country. Countries with higher alcohol consumption tend to have lower life expectancy, while countries with lower alcohol consumption tend to have higher life expectancy. However, correlation does not necessarily imply causation, and other factors could also be influencing life expectancy in these countries.
 
-Machine Learning: 
-Visualization: We started using Tableau to create graphics that help us visualize the impact of alcohol consumption on life expectancy
+**Machine Learning**: 
+
+**Visualization**: We started using Tableau to create graphics that help us visualize the impact of alcohol consumption on life expectancy and to see if the consumption have increased.
 
 
 ## Tools
