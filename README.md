@@ -43,7 +43,7 @@ Year variable is not as clean as in the previous dataset and requires to clear r
 
 ## Status of the project
 
-We have defined the topic of the project, why we chose it, what we intend to answer with our data and we are currently in the process of exploring the dataset in order to discover what other answers the data could provide us. The next step is to include a machine learning model, confusion matrix and accuracy score.
+We are exploring the datsets and trying to answer out questions, now we have a machine learning model.
 
 ## Process
 
