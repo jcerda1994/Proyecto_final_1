@@ -47,14 +47,24 @@ We are exploring the datsets and trying to answer out questions, now we have a m
 
 ## Process
 
-- Data
-- ETL data 
-- Machine Learning
-- Visualization
+**Data**: We used the datasets of alcohol consumption and life expectancy to see the impact and to observe the alcohol consumption over time
+
+**ETL**: We processed the data using Pandas, drop null values, duplicates and merged the life expectancy data with the alcohol consumption by country to see if the alcohol consumption have increased over time.
+
+**Analysis**: 
+
+Based on the data of developed countries, we can see that alcohol consumption did not consistently increase over time across all countries. Some countries saw an increase in alcohol consumption from 2000 to 2015, such as Austria, Croatia, Lithuania, and Portugal. Other countries, such as Australia and Japan, saw a decrease in alcohol consumption. Some countries had missing data for 2015, such as Cyprus, Latvia, Luxembourg, Malta, Netherlands, Poland, Romania, Singapore, Slovenia, Spain, Switzerland, and the United States.
+
+We also found that there seems to be a negative correlation between alcohol consumption and life expectancy by country. Countries with higher alcohol consumption tend to have lower life expectancy, while countries with lower alcohol consumption tend to have higher life expectancy. However, correlation does not necessarily imply causation, and other factors could also be influencing life expectancy in these countries.
+
+Machine Learning: 
+Visualization: We started using Tableau to create graphics that help us visualize the impact of alcohol consumption on life expectancy
+
 
 ## Tools
 
-PostgreSQL, Python, Pandas, Tableau
+![tools](https://user-images.githubusercontent.com/113747210/224205109-0f7d0dc7-151e-471a-9fe7-d7e43dabf043.png)
+
 
 ## Machine Learning Model
 
