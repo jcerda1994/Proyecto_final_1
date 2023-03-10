@@ -69,12 +69,62 @@ Based on the data of developed countries, we can see that alcohol consumption di
 
 We also found that there seems to be a negative correlation between alcohol consumption and life expectancy by country. Countries with higher alcohol consumption tend to have lower life expectancy, while countries with lower alcohol consumption tend to have higher life expectancy. However, correlation does not necessarily imply causation, and other factors could also be influencing life expectancy in these countries.
 
-<img width="442" alt="Imagen 1" src="https://user-images.githubusercontent.com/113747210/224210922-f66ed599-e570-4b88-bdb9-04f2623039bf.png">
+**Machine Learning**: The Machine Learning model was originally performed as a multiple linear regression. The tables compiled were
+* Life_Expectancy_WHO
+* lifeexpectancy-verbose
 
-<img width="428" alt="Imagen 2" src="https://user-images.githubusercontent.com/113747210/224210939-1ed9e981-3ea0-4356-945f-9a221b49027b.png">
+After a cleaning process, the selected columns for the Machine Learning model was performed over the following varibles:
+* GhoDisplay
+* RegionDisplay
+* WorldBankIncomeGroupDisplay
+* SexDisplay
+* Status
+* Life_expectancy_
+* Adult_Mortality
+* infant_deaths
+* Alcohol
+* percentage_expenditure
+* Hepatitis_B
+* _BMI_
+* Total_expenditure
+* GDP
+* Population
+* Income_composition_of_resources
+* Schooling
+* longevity
 
-
-**Machine Learning**: 
+Seven of the aforementioned variables are categorical, which required onehotencoding:
+* GHO: 3 values 
+  * Healthy life expectancy (HALE) at birth (years)
+  * Life expectancy at age 60 (years)
+  * Life expectancy at birth (years)
+* Region: 6 values
+  * Africa
+  * Americas
+  * Eastern Mediterranean
+  * Europe
+  * South East Asia
+  * Western Pacific
+* World Bank Income: 4 values
+  * High income
+  * Low income
+  * Lower middle income
+  * Upper middle income
+* Sex: 3 values
+  * Both
+  * Female
+  * Male
+* Status: 2 values
+  * Developed
+  * Developing
+* Longevity: 2 values
+  * Long lived (>85 years)
+  * Short lived (<85 years)
+  
+Data was scaled and trained for not overfitting the model.
+  
+However, results were not satisying. Hence, a neural network model was then performed.
+The neural network model used has 2 hidden layers, a relu activation function and 8 and 5 neurons. Results deliver a 98% accuracy model.
 
 **Visualization**: We started using Tableau to create graphics that help us visualize the impact of alcohol consumption on life expectancy and to see if the consumption have increased.
 
