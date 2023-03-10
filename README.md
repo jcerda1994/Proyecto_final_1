@@ -69,6 +69,11 @@ Based on the data of developed countries, we can see that alcohol consumption di
 
 We also found that there seems to be a negative correlation between alcohol consumption and life expectancy by country. Countries with higher alcohol consumption tend to have lower life expectancy, while countries with lower alcohol consumption tend to have higher life expectancy. However, correlation does not necessarily imply causation, and other factors could also be influencing life expectancy in these countries.
 
+<img width="442" alt="Imagen 1" src="https://user-images.githubusercontent.com/113747210/224210922-f66ed599-e570-4b88-bdb9-04f2623039bf.png">
+
+<img width="428" alt="Imagen 2" src="https://user-images.githubusercontent.com/113747210/224210939-1ed9e981-3ea0-4356-945f-9a221b49027b.png">
+
+
 **Machine Learning**: 
 
 **Visualization**: We started using Tableau to create graphics that help us visualize the impact of alcohol consumption on life expectancy and to see if the consumption have increased.
