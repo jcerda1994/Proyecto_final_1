@@ -50,7 +50,7 @@ It's also worth noting that while some countries have experienced an increase in
 **Visualization**: We started using Tableau to create graphics that help us visualize the impact of alcohol consumption on life expectancy and to see if the consumption have increased.
 
 
-## Tools
+## Technologies, languages and tools
 
 ![tools](https://user-images.githubusercontent.com/113747210/224205109-0f7d0dc7-151e-471a-9fe7-d7e43dabf043.png)
 
@@ -68,13 +68,12 @@ Tools we used for visualization and show the results
 **Datasets**
 
 1. https://www.kaggle.com/datasets/thedevastator/relationship-between-alcohol-consumption-and-lif
-2. https://www.kaggle.com/datasets/pralabhpoudel/alcohol-consumption-by-country
-3. https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who
+2. https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who
 
 ## Team Members
 
 Team is comprised by:
 
-<img width="309" alt="roles3" src="https://user-images.githubusercontent.com/113747210/222622965-8f39a91e-a48a-4fe7-b4e0-2ccfd3519b5f.png">
+<img width="350" alt="roles3" src="https://user-images.githubusercontent.com/113747210/222622965-8f39a91e-a48a-4fe7-b4e0-2ccfd3519b5f.png">
 
 
