@@ -40,22 +40,43 @@ The variable in common is the country name, even though it is necessary to verif
 
 Year variable is not as clean as in the previous dataset and requires to clear rows with erroneous year data (such as year "-10000"). Furthermore, many values are missing, so it requires a full cleaning process, in order to keep homogeneous information.
 
+Datasets
 
-## Status of the project
+The data analyzed comes from two datasets:
 
-We are exploring the datsets and trying to answer out questions, now we have a machine learning model.
+Life Expectancy verbose by Country (lifeexpectancy-verbose.csv)
+Type of drinks consumend by Country (drinks.csv)
+Life Expectancy from the World Health Organization (WHO) (Life_Expectancy_who.csv)
+
+The drinks table provides information on the beer, spirit, and wine servings per capita in various countries as well as their total litres of pure alcohol consumed per person. It is set to one specific time period and doesn't include a country code, so it will be necessary to join the country variable with the other datasets.
+
+The lifeexpectancy-verbose table includes a wider range of variables such as Global Helath Observatory (GHO) Code, GhoDisplay, PublishStateCode, Sex, the World Bank Income and year. It also includes information of life expectancy provided by the World Health Organization. Life expectancy is measured by 3 different variables: Life expectancy at birth (in years) Life expectancy at age 60 (in years) Healthy life expectancy at birth (in years) In this analysis, the variable that is going to be used is Life expectancy (in years).
+
+Additionally, this dataset contains a geographic classification of each country, grouping them in Africa, Americas, Eastern Mediterranean, Europe, SouthEast Asia and Western Pacific.
+
+Finally, the Life Expectancy dataset classifies each country into economic groups, according to World Bank standards.
+
+Note that dataset is well-organized and has no missing values as for country and year information. Economic classification is null in data of year 2013. However, this classification does not change over the course of time, so it is reasonable to fill-in null values with those of previous years.
+
+Life expectancy from the World Health Organization
+
+This file contains data from year 2000-2015 for 193 countries and consists of 22 Columns and 2938 rows with economic, social and health variables like Status of the Country (Developed-Developing), Life expectancy, Adult mortality, Alcohol consumption, diseases like Hepatitis B, Diphtheria and Polio, population and schooling. 
 
 ## Process
 
-**Data**: We used the datasets of alcohol consumption and life expectancy to see the impact and to observe the alcohol consumption over time
+**Data**: We used the datasets of Life expecxtancy from WHO and life expectancy verbose to observe the alcohol consumption over time, the impact of level of consumption on the life expectancy by country. First we compared the relation between alcohol consumption and life expectancy with the developed countries and then with de developing ones.
 
-**ETL**: We processed the data using Pandas, drop null values, duplicates and merged the life expectancy data with the alcohol consumption by country to see if the alcohol consumption have increased over time, and finally get. the data ready for the machine learning model.
+**ETL**: We processed the data using Pandas, drop null values, duplicates and merged the life expectancy verbose data with the life expectancy from WHO to see if the alcohol consumption have increased over time, and finally get the data ready for the machine learning model.
 
 **Analysis**: 
 
 Based on the data of developed countries, we can see that alcohol consumption did not consistently increase over time across all countries. Some countries saw an increase in alcohol consumption from 2000 to 2015, such as Austria, Croatia, Lithuania, and Portugal. Other countries, such as Australia and Japan, saw a decrease in alcohol consumption. Some countries had missing data for 2015, such as Cyprus, Latvia, Luxembourg, Malta, Netherlands, Poland, Romania, Singapore, Slovenia, Spain, Switzerland, and the United States.
 
 We also found that there seems to be a negative correlation between alcohol consumption and life expectancy by country. Countries with higher alcohol consumption tend to have lower life expectancy, while countries with lower alcohol consumption tend to have higher life expectancy. However, correlation does not necessarily imply causation, and other factors could also be influencing life expectancy in these countries.
+
+In regards to developing countries there does appear to be a slight increase in alcohol consumption worldwide from 2000 to 2015. However, it's important to note that this trend may not be significant or consistent across all countries, and that there may be other factors affecting alcohol consumption levels in different regions.
+
+It's also worth noting that while some countries have experienced an increase in alcohol consumption over time, others have actually seen a decrease. Therefore, it's important to look at the data for each individual country in order to fully understand trends in alcohol consumption.
 
 **Machine Learning**: 
 
