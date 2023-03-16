@@ -1,4 +1,4 @@
-# An analysis between life expectancy & alcohol consumption and sociodemographic variables
+# An analysis between life expectancy & alcohol consumption and socioeconomic status
 
 ## Project overview
 
