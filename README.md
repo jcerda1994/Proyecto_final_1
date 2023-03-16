@@ -117,9 +117,9 @@ Seven of the aforementioned variables are categorical, which required onehotenco
 * Status: 2 values
   * Developed
   * Developing
-* Longevity: 2 values
-  * Long lived (>85 years)
-  * Short lived (<85 years)
+* Cluster (longevity): 2 values
+  * High expectancy (70-88 years)
+  * Low expectancy (49-69 years)
   
 Data was scaled and trained for not overfitting the model.
   
@@ -149,7 +149,7 @@ We cretaed our y variable as a result of a cluster between people with high life
 
 <img width="597" alt="Captura de Pantalla 2023-03-16 a la(s) 11 01 27" src="https://user-images.githubusercontent.com/72363865/225696300-48cfea0b-1bfb-4724-b3a7-3c905cc446c2.png">
 
-We trained the model with the following X variables:
+We trained the (Decision tree and Neural Network) model with the following X variables:
 'percentage_expenditure', 
 '_BMI_', 
 'Total_expenditure', 
@@ -160,15 +160,19 @@ We trained the model with the following X variables:
 'WorldBankIncomeGroupDisplay,
 'Status_Developed',
 
-Afterwards we trained and scaled the model in order to create 3 ML models
+Afterwards we trained and scaled the data in order to create the following ML models:
 
-Decision Tree:
+### Decision Tree:
+
+Confusion matrix:
 <img width="232" alt="Captura de Pantalla 2023-03-16 a la(s) 11 10 15" src="https://user-images.githubusercontent.com/72363865/225698433-ac086d1d-63ed-4666-a2f8-3cd1bf6e1be3.png">
 
-we got an 0.9375 accuracy score
+we got an 0.9375 accuracy score, so we conclude our model is signifcative.
 
 
-Neural Networks:
+### Neural Networks:
+
+In this AI model we put as an input 2 hidden layers with 8 and 5 neurons respectively and a sigmoid activation function.
 
 <img width="612" alt="Captura de Pantalla 2023-03-16 a la(s) 11 12 39" src="https://user-images.githubusercontent.com/72363865/225699004-e67ea08e-d90d-4b30-a5b2-15c19e10f76b.png">
 
@@ -181,7 +185,7 @@ Then we fitted the model with 100 epochs and finally we got our model loss and m
 
 <img width="408" alt="Captura de Pantalla 2023-03-16 a la(s) 11 12 52" src="https://user-images.githubusercontent.com/72363865/225699048-6525428a-4fdc-4037-95a5-5d3da7197fbd.png">
 
-Multiple Linear Regression:
+### Multiple Linear Regression:
 
 finally we cretaed a subtable with the variables that we strongly beleive has positive correlation with the variable life expectancy, the table looks like follows:
 
@@ -202,7 +206,7 @@ Finally we evaluated the model with the following linear model summary:
 
 <img width="605" alt="Captura de Pantalla 2023-03-16 a la(s) 12 10 18" src="https://user-images.githubusercontent.com/72363865/225713238-2f0b418f-2890-4aef-b000-a3085fcbfb3c.png">
 
-We concluded that our model was succesfull given the R-squared is close to 1 (0.958) and our indpendent variables have a p-value close to 0, so we reject the null hypothesis that the independent variables explain with certain the independent variable.
+We concluded that our model was succesfull and accurate given the R-squared is close to 1 (0.958) and our indpendent variables have a p-value close to 0, so we reject the null hypothesis that the independent variables explain with certain the independent variable.
 
 
 ## Resources
