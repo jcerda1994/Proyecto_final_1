@@ -194,7 +194,15 @@ Our X variables are:
 "Status" : Country economic status (Developed or Developing)
 "SexDisplay" : Gender (Male or Female)
 
-We scaled, trained, 
+We scaled, trained and fitted the variables in order to get the predictions of the "y" variable (life expectancy) and we compared the results in the following table:
+
+<img width="211" alt="Captura de Pantalla 2023-03-16 a la(s) 12 08 43" src="https://user-images.githubusercontent.com/72363865/225712879-96bcb5fb-9d0d-4ed5-b0c0-5f7f0c0785c4.png">
+
+Finally we evaluated the model with the following linear model summary:
+
+<img width="605" alt="Captura de Pantalla 2023-03-16 a la(s) 12 10 18" src="https://user-images.githubusercontent.com/72363865/225713238-2f0b418f-2890-4aef-b000-a3085fcbfb3c.png">
+
+We concluded that our model was succesfull given the R-squared is close to 1 (0.958) and our indpendent variables have a p-value close to 0, so we reject the null hypothesis that the independent variables explain with certain the independent variable.
 
 
 ## Resources
