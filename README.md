@@ -1,4 +1,4 @@
-# An analysis between life expectancy & alcohol consumption and sociodemographic variables
+# An analysis between life expectancy and alcohol consumption
 
 ## Project overview
 
@@ -14,8 +14,9 @@ Results are classified by country, region and income, due to the fact that these
 
 The data analyzed comes from two datasets:
 
-- Life Expectancy by Country (Life_Expectancy.csv)
-- Alcohol Consumption by Country (Alcohol_Consumption.csv)
+- Life Expectancy by Country (Life_Expectancy_who.csv)
+- Alcohol Consumption by Country over the years (lifeexpectancy-verbose.csv)
+- Alcohol Consumption by Country (drinks.csv)
 
 **Life Expectancy**
 
@@ -135,15 +136,11 @@ The neural network model used has 2 hidden layers, a relu activation function an
 
 ## Machine Learning Model
 
-Describe model and results
-
 We started by merging two datasets in a whole database with the purpose of explaining the correlation between life expectancy vs alcohol consumption and other sociodemographic variables that have in big or small proportion relationship to the variable we are trying to explain.
 
 
 
 ## Visualization
-
-Tools we used for visualization and show the results
 
 We cretaed our y variable as a result of a cluster between people with high life expactancy and low life expectancy by their alcohol consumption
 
