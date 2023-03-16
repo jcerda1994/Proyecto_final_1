@@ -150,15 +150,15 @@ We cretaed our y variable as a result of a cluster between people with high life
 <img width="597" alt="Captura de Pantalla 2023-03-16 a la(s) 11 01 27" src="https://user-images.githubusercontent.com/72363865/225696300-48cfea0b-1bfb-4724-b3a7-3c905cc446c2.png">
 
 We trained the (Decision tree and Neural Network) model with the following X variables:
-'percentage_expenditure', 
-'_BMI_', 
-'Total_expenditure', 
-'GDP',
-'Population', 
-'Income_composition_of_resources',
-'RegionDisplay',
-'WorldBankIncomeGroupDisplay,
-'Status_Developed',
+* 'percentage_expenditure', 
+* '_BMI_', 
+* 'Total_expenditure', 
+* 'GDP',
+* 'Population', 
+* 'Income_composition_of_resources',
+* 'RegionDisplay',
+* 'WorldBankIncomeGroupDisplay,
+* 'Status_Developed',
 
 Afterwards we trained and scaled the data in order to create the following ML models:
 
@@ -185,6 +185,8 @@ Then we fitted the model with 100 epochs and finally we got our model loss and m
 
 <img width="408" alt="Captura de Pantalla 2023-03-16 a la(s) 11 12 52" src="https://user-images.githubusercontent.com/72363865/225699048-6525428a-4fdc-4037-95a5-5d3da7197fbd.png">
 
+We conclude our NN model is not that accurate given that we exclude from the original table strongly correlated variables with the "y" variable such as (Life_expectancy, Alcohol and Adult_Mortality).
+
 ### Multiple Linear Regression:
 
 finally we cretaed a subtable with the variables that we strongly beleive has positive correlation with the variable life expectancy, the table looks like follows:
@@ -193,10 +195,10 @@ finally we cretaed a subtable with the variables that we strongly beleive has po
 
 Our y variable is : "Life_expectancy_" (49-69 years) and (70-88 years)
 Our X variables are:
-"WorldBankIncomeGroupDisplay" : Socioeconomic status (Low, Medium, High Income)
-"Alcohol" : Alcohol consumption in liters (lt)
-"Status" : Country economic status (Developed or Developing)
-"SexDisplay" : Gender (Male or Female)
+* "WorldBankIncomeGroupDisplay" : Socioeconomic status (Low, Medium, High Income)
+* "Alcohol" : Alcohol consumption in liters (lt)
+* "Status" : Country economic status (Developed or Developing)
+* "SexDisplay" : Gender (Male or Female)
 
 We scaled, trained and fitted the variables in order to get the predictions of the "y" variable (life expectancy) and we compared the results in the following table:
 
