@@ -138,11 +138,14 @@ We concluded that our model was succesfull and accurate given the R-squared is c
 
 ## Visualization
 
-We used Tableau to visualize the data from each country as a map where we can filter by year. We have a dashboard that shows the geographic regions, the level of income by color and life expectancy at birth. And then we have a map that shows the life expectancy in years and we can filter it by years and it is shown in different colors. Then a map with alcohol consumption by country with different tones of color according to the level of alcohol consumption, and finally we creted a map that shows with different color the development status of each country.
+We utilized Tableau to create visual representations of data from various countries. First, we generated a map that enables filtering by year, depicting geographic regions, income levels by color, and life expectancy at birth. [Here is the link to tableau dashboard](https://public.tableau.com/views/LifeExpectancyvsAlcoholConsumption-LifeExpectancyvsAlcoholConsumption/VerboseDatabase?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
 
-We utilized Tableau to create visual representations of data from various countries. First, we generated a map that enables filtering by year, depicting geographic regions, income levels by color, and life expectancy at birth. 
+![image](https://user-images.githubusercontent.com/113747210/225772509-488621c1-ee10-46a2-a833-af051a50f675.png)
 
-Secondly, we developed a separate map that displays life expectancy data in years, allowing us to filter the information by year and view it in distinct color categories. Another map illustrates alcohol consumption by country, using a range of color tones to reflect varying levels of consumption. Lastly, we produced a map that categorizes countries by their development status, distinguished by a range of colors.
+Secondly, we developed a separate map that displays life expectancy data in years, allowing us to filter the information by year and view it in distinct color categories. Another map illustrates alcohol consumption by country, using a range of color tones to reflect varying levels of consumption. Lastly, we produced a map that categorizes countries by their development status, distinguished by a range of colors.[Here is the link to tableau dashboard] (https://public.tableau.com/views/LifeExpectancyvsAlcoholConsumption-LifeExpectancyvsAlcoholConsumption2/WHODatabase?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
+
+![image](https://user-images.githubusercontent.com/113747210/225772586-ba1a7f6a-5e26-4003-b93f-0da1ac90d3a2.png)
+
 
 ## Resources
 
