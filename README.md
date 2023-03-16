@@ -1,4 +1,4 @@
-# An analysis between life expectancy and alcohol consumption by country
+# An analysis between life expectancy and alcohol consumption and sociodemographic variables
 
 ## Project overview
 
@@ -137,9 +137,65 @@ The neural network model used has 2 hidden layers, a relu activation function an
 
 Describe model and results
 
+We started by merging two datasets in a whole database with the purpose of explaining the correlation between life expectancy vs alcohol consumption and other sociodemographic variables that have in big or small proportion relationship to the variable we are trying to explain.
+
+
+
 ## Visualization
 
 Tools we used for visualization and show the results
+
+We cretaed our y variable as a result of a cluster between people with high life expactancy and low life expectancy by their alcohol consumption
+
+<img width="597" alt="Captura de Pantalla 2023-03-16 a la(s) 11 01 27" src="https://user-images.githubusercontent.com/72363865/225696300-48cfea0b-1bfb-4724-b3a7-3c905cc446c2.png">
+
+We trained the model with the following X variables:
+'percentage_expenditure', 
+'_BMI_', 
+'Total_expenditure', 
+'GDP',
+'Population', 
+'Income_composition_of_resources',
+'RegionDisplay',
+'WorldBankIncomeGroupDisplay,
+'Status_Developed',
+
+Afterwards we trained and scaled the model in order to create 3 ML models
+
+Decision Tree:
+<img width="232" alt="Captura de Pantalla 2023-03-16 a la(s) 11 10 15" src="https://user-images.githubusercontent.com/72363865/225698433-ac086d1d-63ed-4666-a2f8-3cd1bf6e1be3.png">
+
+we got an 0.9375 accuracy score
+
+
+Neural Networks:
+
+<img width="612" alt="Captura de Pantalla 2023-03-16 a la(s) 11 12 39" src="https://user-images.githubusercontent.com/72363865/225699004-e67ea08e-d90d-4b30-a5b2-15c19e10f76b.png">
+
+Then we compile the model with the following criteria:
+* loss="binary_crossentropy"
+* optimizer="adam"
+* metrics=["accuracy"]
+
+Then we fitted the model with 100 epochs and finally we got our model loss and model accuracy as follows:
+
+<img width="408" alt="Captura de Pantalla 2023-03-16 a la(s) 11 12 52" src="https://user-images.githubusercontent.com/72363865/225699048-6525428a-4fdc-4037-95a5-5d3da7197fbd.png">
+
+Multiple Linear Regression:
+
+finally we cretaed a subtable with the variables that we strongly beleive has positive correlation with the variable life expectancy, the table looks like follows:
+
+<img width="544" alt="Captura de Pantalla 2023-03-16 a la(s) 11 14 55" src="https://user-images.githubusercontent.com/72363865/225699559-68539341-7216-43a8-8d54-33059854ebd1.png">
+
+Our y variable is : "Life_expectancy_" (49-69 years) and (70-88 years)
+Our X variables are:
+"WorldBankIncomeGroupDisplay" : Socioeconomic status (Low, Medium, High Income)
+"Alcohol" : Alcohol consumption in liters (lt)
+"Status" : Country economic status (Developed or Developing)
+"SexDisplay" : Gender (Male or Female)
+
+We scaled, trained, 
+
 
 ## Resources
 
