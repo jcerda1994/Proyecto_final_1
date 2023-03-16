@@ -1,4 +1,4 @@
-# An analysis between life expectancy & alcohol consumption by socioeconomic status
+# An analysis between life expectancy & alcohol consumption
 
 ## Project overview
 
@@ -59,7 +59,7 @@ It's also worth noting that while some countries have experienced an increase in
 
 **Machine Learning**: The next step was to develop a machine learning model that we describe below.
 
-**Visualization**: We started using Tableau to create graphics that help us visualize the impact of alcohol consumption on life expectancy and to see if the consumption have increased. Below we can see our visualizations and dashboard.
+**Visualization**: We used Tableau to create maps that help us visualize the impact of alcohol consumption on life expectancy and to see if the consumption have increased over time. Below we put the results and link to the Tableau dashboard.
 
 ## Tools
 
