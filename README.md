@@ -90,6 +90,7 @@ Afterwards we trained and scaled the data in order to create the following ML mo
 ### Decision Tree:
 
 Confusion matrix:
+
 <img width="232" alt="Captura de Pantalla 2023-03-16 a la(s) 11 10 15" src="https://user-images.githubusercontent.com/72363865/225698433-ac086d1d-63ed-4666-a2f8-3cd1bf6e1be3.png">
 
 we got an 0.9375 accuracy score, so we conclude our model is signifcative.
