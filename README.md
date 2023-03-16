@@ -2,29 +2,32 @@
 
 ## Project overview
 
-It is common belief that alcohol consumption has grown over the last years, even though its adverse consequences on human health. Is this true? Has alcohol consumption increased over time? If so, does it have impact on life expectancy? What about the type of alcohol consumed? Is there any difference between drinking beer, wine or spirits?
+It is common belief that alcohol consumption has grown over the last years, even though its adverse consequences on human health. Is this true? Has alcohol consumption increased over time? If so, does it have impact on life expectancy?
 
-This project intends to answers these questions through the analysis of historic databases of life expectancy, alcohol consumption and type of alcohol consumed.
+This project intends to answers these questions through the analysis of historic databases of life expectancy and alcohol consumption.
 
 Results are classified by country, region and income, due to the fact that these variables affect both life expectancy and alcohol consumption. For example, muslim countries are not supposed to permit alcohol consumption. On the other hand, countries with higher income could have higher rates of alcohol consumption, but have better access to health services, so it might be difficult to infer a relationship between life expectancy and alcohol consumption.
 
 ## Database
 
+### Data source
+
+Our data comes from a dataset hosted on Kaggle, a platform for data scientists and machine learning engineers to share, discover, and analyze datasets.
+
+The dataset, titled "Relationship between Alcohol Consumption and Life Expectancy" contains two csv files: "Life-expectancy-verbose" and "Drinks".
+
+We also worked with a dataset called “Life_expectancy_who.csv” tha have information provided by the World Health Organization.
+
 ### Datasets
 
 The data analyzed comes from two datasets:
 
-- Life Expectancy by Country (Life_Expectancy.csv)
-- Alcohol Consumption by Country (Alcohol_Consumption.csv)
+- Life Expectancy verbose by Country (lifeexpectancy-verbose.csv) and Type of drinks consumend by Country (drinks.csv)
+- Life Expectancy from the World Health Organization (WHO) (Life_Expectancy_who.csv)
 
-**Life Expectancy**
+The drinks table provides information on the beer, spirit, and wine servings per capita in various countries as well as their total litres of pure alcohol consumed per person. It is set to one specific time period and doesn't include a country code, so it will be necessary to join the country variable with the other datasets.
 
-The Life Expectancy by Country dataset includes information of life expectancy provided by the World Health Organization. Life expectancy is measured by 3 different variables:
-
-Life expectancy at birth (in years)
-Life expectancy at age 60 (in years)
-Healthy life expectancy at birth (in years)
-In this analysis, the variable that is going to be used is Life expectancy (in years).
+The lifeexpectancy-verbose table includes a wider range of variables such as Global Helath Observatory (GHO) Code, GhoDisplay, PublishStateCode, Sex, the World Bank Income and year. It also includes information of life expectancy provided by the World Health Organization. Life expectancy is measured by 3 different variables: Life expectancy at birth (in years) Life expectancy at age 60 (in years) Healthy life expectancy at birth (in years) In this analysis, the variable that is going to be used is Life expectancy (in years).
 
 Additionally, this dataset contains a geographic classification of each country, grouping them in Africa, Americas, Eastern Mediterranean, Europe, SouthEast Asia and Western Pacific.
 
@@ -32,36 +35,17 @@ Finally, the Life Expectancy dataset classifies each country into economic group
 
 Note that dataset is well-organized and has no missing values as for country and year information. Economic classification is null in data of year 2013. However, this classification does not change over the course of time, so it is reasonable to fill-in null values with those of previous years.
 
-**Alcohol Consumption**
-
-Alcohol Consumption dataset includes fewer variables than the Life Expectancy dataset.
-
-The variable in common is the country name, even though it is necessary to verify that Country names match in both datasets.
-
-Year variable is not as clean as in the previous dataset and requires to clear rows with erroneous year data (such as year "-10000"). Furthermore, many values are missing, so it requires a full cleaning process, in order to keep homogeneous information.
-
-**Drinks**
-
-Drinks dataset has fewer variables and is set to one specific time period.
-
-Variables used in this dataset are measured in servings and are classified in beer servings, spirit servings and wine servings. Drinks dataset also includes a summary variable in which adds servings from all types and showing them in liters of alcohol consumed.
-
-This dataset doesn't include a country code, so it will be necessary to join the country variable with the other datasets.
+Life expectancy from the World Health Organization.csv: This file contains data from year 2000-2015 for 193 countries and consists of 22 Columns and 2938 rows with economic, social and health variables like Status of the Country (Developed-Developing), Life expectancy, Adult mortality, Alcohol consumption, diseases like Hepatitis B, Diphtheria and Polio, population and schooling.
 
 **ERD**
 
 ![ERD Life_Expectancy_vs_Alcohol_Consumption](https://user-images.githubusercontent.com/113773420/222615004-c5ad6f57-6239-49c8-b998-4d3ac5fb2981.png)
 
-
-## Status of the project
-
-We are exploring the datsets and trying to answer our questions, we also have a machine learning model. Our next step is to get ready oyr dashboard with the results of the analysis and prepare our presentation.
-
 ## Process
 
-**Data**: We used the datasets of alcohol consumption and life expectancy to see the impact and to observe the alcohol consumption over time
+**Data**: We used the datasets of Life expecxtancy from WHO and life expectancy verbose to observe the alcohol consumption over time, the impact of level of consumption on the life expectancy by country. First we compared the relation between alcohol consumption and life expectancy with the developed countries and then with de developing ones.
 
-**ETL**: We processed the data using Pandas, drop null values, duplicates and merged the life expectancy data with the alcohol consumption by country to see if the alcohol consumption have increased over time, and finally get. the data ready for the machine learning model.
+**ETL**: We processed the data using Pandas, drop null values, duplicates and merged the life expectancy verbose data with the life expectancy from WHO to see if the alcohol consumption have increased over time, and finally get the data ready for the machine learning model.
 
 **Analysis**: 
 
@@ -69,64 +53,13 @@ Based on the data of developed countries, we can see that alcohol consumption di
 
 We also found that there seems to be a negative correlation between alcohol consumption and life expectancy by country. Countries with higher alcohol consumption tend to have lower life expectancy, while countries with lower alcohol consumption tend to have higher life expectancy. However, correlation does not necessarily imply causation, and other factors could also be influencing life expectancy in these countries.
 
-**Machine Learning**: The Machine Learning model was originally performed as a multiple linear regression. The tables compiled were
-* Life_Expectancy_WHO
-* lifeexpectancy-verbose
+In regards to developing countries there does appear to be a slight increase in alcohol consumption worldwide from 2000 to 2015. However, it's important to note that this trend may not be significant or consistent across all countries, and that there may be other factors affecting alcohol consumption levels in different regions.
 
-After a cleaning process, the selected columns for the Machine Learning model was performed over the following varibles:
-* GhoDisplay
-* RegionDisplay
-* WorldBankIncomeGroupDisplay
-* SexDisplay
-* Status
-* Life_expectancy_
-* Adult_Mortality
-* infant_deaths
-* Alcohol
-* percentage_expenditure
-* Hepatitis_B
-* _BMI_
-* Total_expenditure
-* GDP
-* Population
-* Income_composition_of_resources
-* Schooling
-* longevity
+It's also worth noting that while some countries have experienced an increase in alcohol consumption over time, others have actually seen a decrease. Therefore, it's important to look at the data for each individual country in order to fully understand trends in alcohol consumption.
 
-Seven of the aforementioned variables are categorical, which required onehotencoding:
-* GHO: 3 values 
-  * Healthy life expectancy (HALE) at birth (years)
-  * Life expectancy at age 60 (years)
-  * Life expectancy at birth (years)
-* Region: 6 values
-  * Africa
-  * Americas
-  * Eastern Mediterranean
-  * Europe
-  * South East Asia
-  * Western Pacific
-* World Bank Income: 4 values
-  * High income
-  * Low income
-  * Lower middle income
-  * Upper middle income
-* Sex: 3 values
-  * Both
-  * Female
-  * Male
-* Status: 2 values
-  * Developed
-  * Developing
-* Cluster (longevity): 2 values
-  * High expectancy (70-88 years)
-  * Low expectancy (49-69 years)
-  
-Data was scaled and trained for not overfitting the model.
-  
-However, results were not satisying. Hence, a neural network model was then performed.
-The neural network model used has 2 hidden layers, a relu activation function and 8 and 5 neurons. Results deliver a 98% accuracy model.
+**Machine Learning**: The next step was to develop a machine learning model that we describe below.
 
-**Visualization**: We started using Tableau to create graphics that help us visualize the impact of alcohol consumption on life expectancy and to see if the consumption have increased.
+**Visualization**: We started using Tableau to create graphics that help us visualize the impact of alcohol consumption on life expectancy and to see if the consumption have increased. Below we can see our visualizations and dashboard.
 
 ## Tools
 
@@ -135,15 +68,7 @@ The neural network model used has 2 hidden layers, a relu activation function an
 
 ## Machine Learning Model
 
-Describe model and results
-
 We started by merging two datasets in a whole database with the purpose of explaining the correlation between life expectancy vs alcohol consumption and other sociodemographic variables that have in big or small proportion relationship to the variable we are trying to explain.
-
-
-
-## Visualization
-
-Tools we used for visualization and show the results
 
 We cretaed our y variable as a result of a cluster between people with high life expactancy and low life expectancy by their alcohol consumption
 
@@ -189,7 +114,7 @@ We conclude our NN model is not that accurate given that we exclude from the ori
 
 ### Multiple Linear Regression:
 
-finally we cretaed a subtable with the variables that we strongly beleive has positive correlation with the variable life expectancy, the table looks like follows:
+Finally we cretaed a subtable with the variables that we strongly beleive has positive correlation with the variable life expectancy, the table looks like follows:
 
 <img width="544" alt="Captura de Pantalla 2023-03-16 a la(s) 11 14 55" src="https://user-images.githubusercontent.com/72363865/225699559-68539341-7216-43a8-8d54-33059854ebd1.png">
 
@@ -210,20 +135,25 @@ Finally we evaluated the model with the following linear model summary:
 
 We concluded that our model was succesfull and accurate given the R-squared is close to 1 (0.958) and our indpendent variables have a p-value close to 0, so we reject the null hypothesis that the independent variables explain with certain the independent variable.
 
+## Visualization
+
+We used Tableau to visualize the data from each country as a map where we can filter by year. We have a dashboard that shows the geographic regions, the level of income by color and life expectancy at birth. And then we have a map that shows the life expectancy in years and we can filter it by years and it is shown in different colors. Then a map with alcohol consumption by country with different tones of color according to the level of alcohol consumption, and finally we creted a map that shows with different color the development status of each country.
+
+We utilized Tableau to create visual representations of data from various countries. First, we generated a map that enables filtering by year, depicting geographic regions, income levels by color, and life expectancy at birth. 
+
+Secondly, we developed a separate map that displays life expectancy data in years, allowing us to filter the information by year and view it in distinct color categories. Another map illustrates alcohol consumption by country, using a range of color tones to reflect varying levels of consumption. Lastly, we produced a map that categorizes countries by their development status, distinguished by a range of colors.
 
 ## Resources
 
 **Datasets**
 
 1. https://www.kaggle.com/datasets/thedevastator/relationship-between-alcohol-consumption-and-lif
-2. https://www.kaggle.com/datasets/pralabhpoudel/alcohol-consumption-by-country
-3. https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who
+2. https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who
 
 ## Team Members
 
 Team is comprised by:
 
 ![roles2](https://user-images.githubusercontent.com/113747210/222621258-02bf4916-c92f-485e-ba7a-28ad3ae6b9af.png)
-
 
 
