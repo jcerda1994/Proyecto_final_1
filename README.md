@@ -138,9 +138,9 @@ We concluded that our model was succesfull and accurate given the R-squared is c
 
 ## Visualization
 
-We utilized Tableau to create visual representations of data from various countries. First, we generated a map that enables filtering by year, depicting geographic regions, income levels by color, and life expectancy at birth. [Here is the link to tableau dashboard](https://public.tableau.com/views/LifeExpectancyvsAlcoholConsumption-LifeExpectancyvsAlcoholConsumption/VerboseDatabase?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
+We utilized Tableau to create visual representations of data from various countries. First, we generated a map that enables filtering by year, depicting geographic regions, income levels by color, and life expectancy at birth. [Click Here to go to the tableau dashboard](https://public.tableau.com/views/LifeExpectancyvsAlcoholConsumption-LifeExpectancyvsAlcoholConsumption/VerboseDatabase?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
 
-Secondly, we developed a separate map that displays life expectancy data in years, allowing us to filter the information by year and view it in distinct color categories. Another map illustrates alcohol consumption by country, using a range of color tones to reflect varying levels of consumption. Lastly, we produced a map that categorizes countries by their development status, distinguished by a range of colors. [Here is the link to tableau dashboard] (https://public.tableau.com/views/LifeExpectancyvsAlcoholConsumption-LifeExpectancyvsAlcoholConsumption2/WHODatabase?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
+Secondly, we developed a separate map that displays life expectancy data in years, allowing us to filter the information by year and view it in distinct color categories. Another map illustrates alcohol consumption by country, using a range of color tones to reflect varying levels of consumption. Lastly, we produced a map that categorizes countries by their development status, distinguished by a range of colors. [Click Here to go to the tableau dashboard](https://public.tableau.com/views/LifeExpectancyvsAlcoholConsumption-LifeExpectancyvsAlcoholConsumption2/WHODatabase?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link)
 
 ## Resources
 
